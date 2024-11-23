@@ -8,6 +8,9 @@ export default function HomePageHeader() {
           <i className="fas fa-search"></i> Search
         </button>
         <button>Sign In</button>
+        <span> OFFERS </span>
+        <span> | </span>
+        <span> CONTACT US</span>
       </div>
     </header>
   );
