@@ -5,10 +5,15 @@ export default function HomePageHeader() {
     <header>
       <div className={styles.header}>
         <h1 className={styles.title}>Cinema Hub</h1>
-        <input placeholder="Search for Moives..."></input>
-        <button>
-          <i className="fas fa-search"></i> Search
-        </button>
+        <div className={styles.searchContainer}>
+          <input
+            className={styles.searchBar}
+            placeholder="Search for Moives..."
+          ></input>
+          <button className={styles.searchButton}>
+            <i className="fas fa-search" style={{ marginRight: '8px' }}></i>Search
+          </button>
+        </div>
         <button>Sign In</button>
         <span>OFFERS</span>
         <span>|</span>

@@ -13,3 +13,27 @@
     font-weight: bold;
     letter-spacing: 5px;
 }
+
+.searchContainer {
+    display: flex;
+    gap: 30px; 
+  }
+
+.searchBar{
+    width: 600px;
+    height: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.searchButton {
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #F8C300; /* Gold button */
+    color: black;
+    cursor: pointer;
+  }
