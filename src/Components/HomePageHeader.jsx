@@ -14,7 +14,7 @@ export default function HomePageHeader() {
             <i className="fas fa-search" style={{ marginRight: '8px' }}></i>Search
           </button>
         </div>
-        <button>Sign In</button>
+        <button className={styles.signInButton}>Sign In</button>
         <span>OFFERS</span>
         <span>|</span>
         <span>CONTACT US</span>
