@@ -8,6 +8,13 @@ export default function HomePageCarousel({ data: carouselData }) {
         return <img src={items.src} alt={items.alt} key={index}/>;
       })}
       <BsArrowRightCircleFill />
+      <span>
+        {carouselData.map((_,index)=>{
+          return(
+            <button key={index} onClick={null}></button>
+          )
+        })}
+      </span>
     </div>
   );
 }
