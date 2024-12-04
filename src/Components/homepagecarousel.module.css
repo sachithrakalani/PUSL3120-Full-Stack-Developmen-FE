@@ -13,3 +13,15 @@
     width: 100%;
     height: 100%;
   }
+
+  .arrow:hover {
+    cursor: pointer;
+  }
+  
+  .arrowLeft {
+    left: 1rem;
+  }
+  
+  .rrowRight {
+    right: 1rem;
+  }
