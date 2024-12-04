@@ -1,11 +1,12 @@
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
+import style from "./homepagecarousel.module.css";
 
 export default function HomePageCarousel({ data: carouselData }) {
   return (
-    <div>
+    <div className={style.carousel}>
         <BsArrowLeftCircleFill />
       {carouselData.map((items, index) => {
-        return <img src={items.src} alt={items.alt} key={index}/>;
+        return <img src={items.src} alt={items.alt} key={index} className={style.slide}/>;
       })}
       <BsArrowRightCircleFill />
       <span>
