@@ -4,7 +4,7 @@ import style from "./homepagecarousel.module.css";
 export default function HomePageCarousel({ data: carouselData }) {
   return (
     <div className={style.carousel}>
-        <BsArrowLeftCircleFill
+      <BsArrowLeftCircleFill
         style={{
           position: "absolute",
           filter: "drop-shadow(0px 0px 5px #555)",
@@ -16,9 +16,17 @@ export default function HomePageCarousel({ data: carouselData }) {
         className={style.arrowLeft}
       />
       {carouselData.map((items, index) => {
-        return <img src={items.src} alt={items.alt} key={index} className={style.slide}/>;
+        return (
+          <img
+            src={items.src}
+            alt={items.alt}
+            key={index}
+            className={style.slide}
+          />
+        );
       })}
-      <BsArrowRightCircleFill style={{
+      <BsArrowRightCircleFill
+        style={{
           position: "absolute",
           filter: "drop-shadow(0px 0px 5px #555)",
           width: "3rem",
@@ -26,15 +34,13 @@ export default function HomePageCarousel({ data: carouselData }) {
           color: "white",
           cursor: "pointer",
         }}
-        className={style.arrowRight} />
+        className={style.arrowRight}
+      />
       <span>
-        {carouselData.map((_,index)=>{
-          return(
-            <button key={index} onClick={null}></button>
-          )
+        {carouselData.map((_, index) => {
+          return <button key={index} onClick={null}></button>;
         })}
       </span>
     </div>
   );
 }
-
