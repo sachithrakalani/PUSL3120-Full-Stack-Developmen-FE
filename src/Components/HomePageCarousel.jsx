@@ -37,3 +37,4 @@ export default function HomePageCarousel({ data: carouselData }) {
     </div>
   );
 }
+
