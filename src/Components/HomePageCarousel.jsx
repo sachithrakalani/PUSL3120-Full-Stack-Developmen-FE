@@ -48,7 +48,7 @@ export default function HomePageCarousel({ data: carouselData }) {
       <span className={style.indicators}>
         {carouselData.map((_,index)=>{
           return(
-            <button key={index} className = {slide === index ? `${style.indicator}` : `${style.indicatorinactive}`}></button>
+            <button key={index} onClick={() => setSlides(index)} className = {slide === index ? `${style.indicator}` : `${style.indicatorinactive}`}></button>
           )
         })}
       </span>
