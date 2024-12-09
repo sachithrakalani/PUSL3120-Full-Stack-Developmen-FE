@@ -5,6 +5,7 @@ import image1 from "./../public/assets/images/1st.jpg";
 import image2 from "./../public/assets/images/2nd.webp";
 import image3 from "./../public/assets/images/3rd.webp";
 import image4 from "./../public/assets/images/4th.jpg";
+import NowShowingPage from "./Components/NowShowingPage";
 
 const carouselData = [
   { src: image1, alt: "1st image" },
@@ -18,6 +19,7 @@ function App() {
     <div className="App">
       <HomePageHeader />
       <HomePageCarousel  data={carouselData}/>
+      <NowShowingPage  data={carouselData}/>
     </div>
   )
 }
