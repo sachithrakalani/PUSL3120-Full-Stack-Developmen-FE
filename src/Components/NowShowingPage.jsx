@@ -4,7 +4,7 @@ export default function NowShowingPage({ data: carouselData }) {
   return (
     <div>
       <div className={style.nowshowing}>
-        <h1>Now Showing</h1>
+        <h1>NOW SHOWING</h1>
         <div className={style.imgecontainer}>
           {carouselData.map((movies, index) => {
             return (
