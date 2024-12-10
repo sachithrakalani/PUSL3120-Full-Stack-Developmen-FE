@@ -1,10 +1,11 @@
 .nowshowing {
   background-color: #2d1b5f;
-  padding-top: 20px;
+  padding-top: 15px;
   padding-bottom: 50px;
   padding-left: 80px;
   padding-right: 80px;
   color:white;
+  letter-spacing: 5px;
 }
 
 .imgecontainer {
