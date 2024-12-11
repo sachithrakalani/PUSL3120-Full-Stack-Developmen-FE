@@ -1,0 +1,13 @@
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2d1b5f;
+}
+
+.img {
+  width: 1000px;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
