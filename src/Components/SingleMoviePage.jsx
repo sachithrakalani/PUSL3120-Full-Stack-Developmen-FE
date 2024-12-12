@@ -22,11 +22,11 @@ export default function SingleMoviePage() {
           <img src={image4} alt={image4.alt} className={style.img}/>
         </div>
       </div>
-      <div>
+      <div className={style.calendarContainer}>
         {dates.map((item) => (
           <div key={item.date}>
-            <div>{item.day}</div>
-            <div>{item.date}</div>
+            <div className={style.day}>{item.day}</div>
+            <div className={style.date}>{item.date}</div>
           </div>
         ))}
       </div>

@@ -11,3 +11,22 @@
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
+.calendarContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2d0052;
+  padding: 20px;
+  color: white;
+}
+
+.day {
+  padding-top: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.date {
+  font-size: 18px;
+}
