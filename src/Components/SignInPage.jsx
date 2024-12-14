@@ -1,18 +1,24 @@
 import HomePageHeader from "./HomePageHeader";
+import style from "./signinpage.module.css";
 
 export default function SignIn() {
   return (
-    <div>
+    <div className={style.signcontainer}>
       <HomePageHeader />
-      <h1>Sign In</h1>
+      <center>
+        <div className={style.wrapper}>
+          <h1>Sign In</h1>
 
-      <input type="email" placeholder="Email" name="Email" />
-      <input type="password" placeholder="Password" name="Password" />
+          <input type="email" placeholder="Email" name="Email" />
+          <input type="password" placeholder="Password" name="Password" />
+          <input type="TelephoneNo" placeholder="Telephone No" name="Telephone No" />
 
-      <button type="submit">Sign In</button>
-      <div>
-        Not a member?<a href="">Register Now</a>
-      </div>
+          <button type="submit">Sign In</button>
+          <div>
+            Not a member? <a href="">Register Now</a>
+          </div>
+        </div>
+      </center>
     </div>
   );
 }
