@@ -9,6 +9,7 @@ import NowShowingPage from "./Components/NowShowingPage";
 import ComingSoonSection from "./Components/ComingSoonSection";
 import SingleMoviePage from "./Components/SingleMoviePage";
 import SignIn from "./Components/SignInPage";
+import SignUpPage from "./Components/SignUpPage";
 
 const carouselData = [
   { src: image1, alt: "1st image" },
@@ -25,7 +26,8 @@ function App() {
       {/* <NowShowingPage  data={carouselData}/> */}
       {/* <ComingSoonSection data={carouselData} /> */}
       {/* <SingleMoviePage data={carouselData} /> */}
-      <SignIn />
+      {/* <SignIn /> */}
+      <SignUpPage />
     </div>
   )
 }
