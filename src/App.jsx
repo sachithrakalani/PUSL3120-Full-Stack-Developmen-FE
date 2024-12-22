@@ -12,6 +12,7 @@ import SignInPage from "./Components/SignInPage";
 import SignUpPage from "./Components/SignUpPage";
 import SeatBookingPage from "./Components/SeatBookingPage";
 import SignInAdminAndUserPage from "./Components/SignInAdminandUser";
+import SignUpAdminAndUserPage from "./Components/SignUpAdminAndUser";
 
 const carouselData = [
   { src: image1, alt: "1st image" },
@@ -31,7 +32,8 @@ function App() {
       {/* <SignInPage /> */}
       {/* <SignUpPage /> */}
      {/* <SeatBookingPage /> */}
-     <SignInAdminAndUserPage />
+     {/* <SignInAdminAndUserPage /> */}
+     <SignUpAdminAndUserPage />
     </div>
   )
 }
