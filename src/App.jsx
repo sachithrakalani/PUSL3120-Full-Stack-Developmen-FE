@@ -35,7 +35,7 @@ function App() {
      {/* <SeatBookingPage /> */}
      {/* <SignInAdminAndUserPage /> */}
      {/* <SignUpAdminAndUserPage /> */}
-     <AdminDashboard data={carouselData}/>
+     <AdminDashboard/>
     </div>
   )
 }

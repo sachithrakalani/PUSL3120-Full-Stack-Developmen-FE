@@ -1,17 +1,22 @@
+import styles from "./homepageheader.module.css";
+
 export default function AdminDashboard() {
   return (
     <div>
       <header>
-        <div>
-          <h1>Cinema Hub</h1>
-          <div>
-            <input placeholder="Search for Moives..."></input>
-            <button>
-              <i className="fas fa-search"></i>
+        <div className={styles.header}>
+          <h1 className={styles.title}>Cinema Hub</h1>
+          <div className={styles.searchContainer}>
+            <input
+              className={styles.searchBar}
+              placeholder="Search for Moives..."
+            ></input>
+            <button className={styles.searchButton}>
+              <i className="fas fa-search" style={{ marginRight: "8px" }}></i>
               Search
             </button>
           </div>
-          <div>
+          <div className={styles.links}>
             <span>Admin</span>
             <span>|</span>
             <span>Add Movies</span>
@@ -25,3 +30,4 @@ export default function AdminDashboard() {
     </div>
   );
 }
+
