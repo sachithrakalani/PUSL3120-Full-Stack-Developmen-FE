@@ -1,6 +1,6 @@
 import style from "./comingsoonsection.module.css";
 
-export default function NowShowingPage({ data: carouselData }) {
+export default function ComingSoonSection({ data: carouselData }) {
   return (
     <div>
       <div className={style.nowshowing}>
