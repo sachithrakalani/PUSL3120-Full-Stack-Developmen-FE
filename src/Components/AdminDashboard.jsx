@@ -1,4 +1,5 @@
 import styles from "./homepageheader.module.css";
+import { Link } from "react-router-dom";
 
 export default function AdminDashboard() {
   return (
@@ -21,13 +22,19 @@ export default function AdminDashboard() {
             <span>|</span>
             <span>Add Movies</span>
             <span>|</span>
-            <span>User Profile</span>
+            <Link
+              to="/userprofile"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              <span>User Profile</span>
+            </Link>
             <span>|</span>
-            <span>Logout</span>
+            <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+              <span>Logout</span>
+            </Link>
           </div>
         </div>
       </header>
     </div>
   );
 }
-
