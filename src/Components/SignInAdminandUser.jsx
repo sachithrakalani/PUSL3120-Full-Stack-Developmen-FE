@@ -32,6 +32,10 @@ export default function SignInAdminAndUserPage() {
                 User
               </Link>
             </button>
+            <div>
+              Not a member?
+              <Link to="/signupadminanduser">Register Now</Link>
+            </div>
           </div>
         </center>
       </div>
