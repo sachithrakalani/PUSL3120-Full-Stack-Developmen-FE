@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import HomePageHeader from "./HomePageHeader";
 import styles from "./signinadminanduser.module.css";
 
@@ -10,9 +11,27 @@ export default function SignInAdminAndUserPage() {
           <div className={styles.wrapper}>
             <h1>Sign In</h1>
             <button className={`${styles.button} ${styles.admin}`}>
-              Admin
+              <Link
+                to="/signinadmin"
+                style={{
+                  textDecoration: "none",
+                  color: "white",
+                }}
+              >
+                Admin
+              </Link>
             </button>
-            <button className={`${styles.button} ${styles.user}`}>User</button>
+            <button className={`${styles.button} ${styles.user}`}>
+              <Link
+                to="/signinuser"
+                style={{
+                  textDecoration: "none",
+                  color: "white",
+                }}
+              >
+                User
+              </Link>
+            </button>
           </div>
         </center>
       </div>

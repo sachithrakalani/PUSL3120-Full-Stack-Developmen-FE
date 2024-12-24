@@ -14,6 +14,7 @@ import AdminDashboard from "./Components/AdminDashboard";
 import AddMoviesPage from "./Components/AddMoviesPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SignInAdminPage from "./Components/SignInAdminPage";
+import SignInUserPage from "./Components/SignInUserPage";
 
 const carouselData = [
   { src: image1, alt: "1st image" },
@@ -27,7 +28,7 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path= "/" element={<HomePage />} />
+          <Route path= "/" element= {<HomePage />} />
           <Route path= "/signin" element= {<SignInAdminPage />} />
         </Routes>
       </div>

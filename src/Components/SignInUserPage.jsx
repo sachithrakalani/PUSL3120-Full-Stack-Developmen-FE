@@ -7,7 +7,7 @@ export default function SignInUserPage() {
       <HomePageHeader />
       <center>
         <div className={style.wrapper}>
-          <h1>Sign In</h1>
+          <h1>Sign In User</h1>
           <input type="username" placeholder="Username" name="username" />
           <input type="email" placeholder="Email" name="Email" />
           <input type="password" placeholder="Password" name="Password" />
