@@ -26,7 +26,8 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path= "/" element={<HomePage />} />
+          <Route path= "/signin" element= {<SignInAdminAndUserPage />} />
         </Routes>
       </div>
     </Router>
