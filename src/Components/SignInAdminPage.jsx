@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import HomePageHeader from "./HomePageHeader";
 import style from "./signinpage.module.css";
 
@@ -11,7 +12,17 @@ export default function SignInAdminPage() {
           <input type="username" placeholder="Username" name="username" />
           <input type="email" placeholder="Email" name="Email" />
           <input type="password" placeholder="Password" name="Password" />
-          <button type="submit">Sign In</button>
+          <button type="submit">
+            <Link
+              to="/admindashboard"
+              style={{
+                textDecoration: "none",
+                color: "white",
+              }}
+            >
+              Sign In
+            </Link>
+          </button>
           <div>
             Not a member? <a href="">Register Now</a>
           </div>
