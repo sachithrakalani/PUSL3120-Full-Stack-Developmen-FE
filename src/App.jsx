@@ -12,6 +12,7 @@ import SignInAdminAndUserPage from "./Components/SignInAdminandUser";
 import SignUpAdminAndUserPage from "./Components/SignUpAdminAndUser";
 import SignUpAdmin from "./Components/SignUpAdmin";
 import SignUpUser from "./Components/SignUpUserPage";
+import AdminPage from "./Components/AdminPage";
 
 const carouselData = [
   { src: image1, alt: "1st image" },
@@ -32,7 +33,7 @@ function App() {
           <Route path= "/signinuser" element= {<SignInUserPage />} />
           <Route path= "/signupadmin" element= {<SignUpAdmin />} />
           <Route path= "/signupuser" element= {<SignUpUser />} />
-          <Route path= "/admindashboard" element= {<AdminDashboard />} />
+          <Route path= "/admindashboard" element= {<AdminPage />} />
           <Route path= "/homepage" element= {<HomePage />} />
         </Routes>
       </div>
