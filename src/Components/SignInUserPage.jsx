@@ -29,7 +29,7 @@ export default function SignInUserPage() {
             </Link>
           </button>
           <div>
-            Not a member? <a href="">Register Now</a>
+            Not a member? <Link to="/signupadmin">Register Now</Link>
           </div>
         </div>
       </center>

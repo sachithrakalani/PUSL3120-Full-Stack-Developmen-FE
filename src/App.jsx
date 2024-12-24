@@ -14,6 +14,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SignInAdminPage from "./Components/SignInAdminPage";
 import SignInUserPage from "./Components/SignInUserPage";
 import SignInAdminAndUserPage from "./Components/SignInAdminandUser";
+import SignUpAdminAndUserPage from "./Components/SignUpAdminAndUser";
 
 const carouselData = [
   { src: image1, alt: "1st image" },
@@ -29,6 +30,7 @@ function App() {
         <Routes>
           <Route path= "/" element= {<HomePage />} />
           <Route path= "/signinadminanduser" element= {<SignInAdminAndUserPage />} />
+          <Route path= "/signupadmin" element= {<SignUpAdminAndUserPage />} />
           <Route path= "/signinadmin" element= {<SignInAdminPage />} />
           <Route path= "/signinuser" element= {<SignInUserPage />} />
           <Route path= "/admindashboard" element= {<AdminDashboard />} />
