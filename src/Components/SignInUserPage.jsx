@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import HomePageHeader from "./HomePageHeader";
 import style from "./signinpage.module.css";
 
@@ -16,7 +17,17 @@ export default function SignInUserPage() {
             placeholder="Telephone No"
             name="Telephone No"
           />
-          <button type="submit">Sign In</button>
+          <button type="submit">
+            <Link
+              to="/homepage"
+              style={{
+                textDecoration: "none",
+                color: "white",
+              }}
+            >
+              Sign In
+            </Link>
+          </button>
           <div>
             Not a member? <a href="">Register Now</a>
           </div>

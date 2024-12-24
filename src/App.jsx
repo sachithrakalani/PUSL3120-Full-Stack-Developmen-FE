@@ -8,13 +8,12 @@ import SingleMoviePage from "./Components/SingleMoviePage";
 import SignInPage from "./Components/SignInUserPage";
 import SignUpPage from "./Components/SignUpPage";
 import SeatBookingPage from "./Components/SeatBookingPage";
-import SignInAdminAndUserPage from "./Components/SignInAdminandUser";
-import SignUpAdminAndUserPage from "./Components/SignUpAdminAndUser";
 import AdminDashboard from "./Components/AdminDashboard";
 import AddMoviesPage from "./Components/AddMoviesPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SignInAdminPage from "./Components/SignInAdminPage";
 import SignInUserPage from "./Components/SignInUserPage";
+import SignInAdminAndUserPage from "./Components/SignInAdminandUser";
 
 const carouselData = [
   { src: image1, alt: "1st image" },
@@ -33,6 +32,7 @@ function App() {
           <Route path= "/signinadmin" element= {<SignInAdminPage />} />
           <Route path= "/signinuser" element= {<SignInUserPage />} />
           <Route path= "/admindashboard" element= {<AdminDashboard />} />
+          <Route path= "/homepage" element= {<HomePage />} />
         </Routes>
       </div>
     </Router>
