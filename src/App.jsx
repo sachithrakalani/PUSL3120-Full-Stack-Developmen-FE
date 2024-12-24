@@ -29,7 +29,10 @@ function App() {
       <div className="App">
         <Routes>
           <Route path= "/" element= {<HomePage />} />
-          <Route path= "/signin" element= {<SignInAdminPage />} />
+          <Route path= "/signinadminanduser" element= {<SignInAdminAndUserPage />} />
+          <Route path= "/signinadmin" element= {<SignInAdminPage />} />
+          <Route path= "/signinuser" element= {<SignInUserPage />} />
+          <Route path= "/admindashboard" element= {<AdminDashboard />} />
         </Routes>
       </div>
     </Router>

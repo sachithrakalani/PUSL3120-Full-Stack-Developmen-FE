@@ -17,7 +17,7 @@ export default function HomePageHeader() {
           </button>
         </div>
         <button className={styles.signInButton}>
-          <Link to="/signin" className={styles.linkStyle}>
+          <Link to="/signinadminanduser" className={styles.linkStyle}>
             Sign In
           </Link>
         </button>
