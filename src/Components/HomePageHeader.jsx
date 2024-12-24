@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./homepageheader.module.css";
 
 export default function HomePageHeader() {
@@ -15,7 +16,11 @@ export default function HomePageHeader() {
             Search
           </button>
         </div>
-        <button className={styles.signInButton}>Sign In</button>
+        <button className={styles.signInButton}>
+          <Link to="/signin" className={styles.linkStyle}>
+            Sign In
+          </Link>
+        </button>
         <div className={styles.links}>
           <span>User Profile</span>
           <span>|</span>

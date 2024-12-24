@@ -1,17 +1,19 @@
 import HomePage from "./Components/HomePage";
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import image1 from "./../public/assets/images/1st.jpg";
 import image2 from "./../public/assets/images/2nd.webp";
 import image3 from "./../public/assets/images/3rd.webp";
 import image4 from "./../public/assets/images/4th.jpg";
 import SingleMoviePage from "./Components/SingleMoviePage";
-import SignInPage from "./Components/SignInPage";
+import SignInPage from "./Components/SignInUserPage";
 import SignUpPage from "./Components/SignUpPage";
 import SeatBookingPage from "./Components/SeatBookingPage";
 import SignInAdminAndUserPage from "./Components/SignInAdminandUser";
 import SignUpAdminAndUserPage from "./Components/SignUpAdminAndUser";
 import AdminDashboard from "./Components/AdminDashboard";
 import AddMoviesPage from "./Components/AddMoviesPage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import SignInAdminPage from "./Components/SignInAdminPage";
 
 const carouselData = [
   { src: image1, alt: "1st image" },
@@ -22,18 +24,15 @@ const carouselData = [
 
 function App() {
   return (
-    <div className="App">
-      <HomePage />
-      {/* <SingleMoviePage data={carouselData} /> */}
-      {/* <SignInPage /> */}
-      {/* <SignUpPage /> */}
-     {/* <SeatBookingPage /> */}
-     {/* <SignInAdminAndUserPage /> */}
-     {/* <SignUpAdminAndUserPage /> */}
-     {/* <AdminDashboard/> */}
-     {/* <AddMoviesPage /> */}
-    </div>
-  )
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path= "/" element={<HomePage />} />
+          <Route path= "/signin" element= {<SignInAdminPage />} />
+        </Routes>
+      </div>
+    </Router>
+  );
 }
 
-export default App
+export default App;

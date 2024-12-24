@@ -48,6 +48,17 @@
   cursor: pointer;
 }
 
+.linkStyle {
+  text-decoration: none;
+  color: white;
+}
+
+.linkStyle:hover {
+  text-decoration: none;
+  color: white;
+}
+
+
 .links {
   display: flex;
   gap: 15px;

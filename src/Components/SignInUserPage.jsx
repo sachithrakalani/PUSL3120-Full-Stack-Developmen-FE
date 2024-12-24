@@ -1,7 +1,7 @@
 import HomePageHeader from "./HomePageHeader";
 import style from "./signinpage.module.css";
 
-export default function SignInPage() {
+export default function SignInUserPage() {
   return (
     <div className={style.signcontainer}>
       <HomePageHeader />
