@@ -17,14 +17,18 @@ export default function HomePageHeader() {
           </button>
         </div>
         <button className={styles.signInButton}>
-          <Link to="/signin" className={styles.linkStyle}>
+          <Link to="/signinadminanduser" className={styles.linkStyle}>
             Sign In
           </Link>
         </button>
         <div className={styles.links}>
-          <span>User Profile</span>
+        <Link to="/userprofile" style={{ textDecoration: "none", color: "white" }}>
+            <span>User Profile</span>
+          </Link>
           <span>|</span>
-          <span>Logout</span>
+          <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+            <span>Logout</span>
+          </Link>
         </div>
       </div>
     </header>
