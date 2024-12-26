@@ -20,7 +20,12 @@ export default function AdminDashboard() {
           <div className={styles.links}>
             <span>Admin</span>
             <span>|</span>
-            <span>Add Movies</span>
+            <Link
+              to="/addmovies"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              <span>Add Movies</span>
+            </Link>
             <span>|</span>
             <Link
               to="/userprofile"
