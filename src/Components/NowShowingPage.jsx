@@ -19,8 +19,7 @@ export default function NowShowingPage() {
     <div>
       <div className={style.nowshowing}>
         <h1>NOW SHOWING</h1>
-        <div className={style.imgecontainer}>
-          {console.log({ NOW: nowShowMovies })}
+        <div className={style.gridContainer}>
           {nowShowMovies.length > 0 &&
             nowShowMovies.map((movie, index) => (
               <div key={index} className={style.card}>
