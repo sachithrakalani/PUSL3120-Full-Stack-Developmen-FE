@@ -2,6 +2,9 @@ import userprofile from "./../../public/assets/images/userprofile.jpg";
 import HomePageHeader from "./HomePageHeader";
 
 export default function UserProfile() {
+  const email = localStorage.getItem("email");
+  const role = localStorage.getItem("role");
+
   return (
     <div>
       <HomePageHeader />
@@ -9,9 +12,8 @@ export default function UserProfile() {
         <img src={userprofile} alt="User Avatar" />
       </div>
       <div>
-        <h2>John Doe</h2>
-        <p>john.doe@example.com</p>
-        <p>Software Engineer | Tech Enthusiast | Coffee Lover</p>
+        <p>{email}</p>
+        <p>{role}</p>
       </div>
     </div>
   );
