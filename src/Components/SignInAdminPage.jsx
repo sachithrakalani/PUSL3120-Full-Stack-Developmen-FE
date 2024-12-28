@@ -6,8 +6,6 @@ export default function SignInAdminPage() {
   const handleLogin = async () => {
     const email = document.querySelector("[name='Email']").value.trim();
     const password = document.querySelector("[name='Password']").value.trim();
-
-    // Validation for empty fields
     if (!email || !password) {
       alert("Both email and password are required.");
       return;
