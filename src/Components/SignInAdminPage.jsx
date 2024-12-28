@@ -18,6 +18,7 @@ export default function SignInAdminPage() {
       localStorage.setItem("token", data.token);
       localStorage.setItem("role", data.role);
       localStorage.setItem("id", data.id);
+      localStorage.setItem("email", data.email);
       alert("Login successful!");
       window.location.href = role === "user" ? "/homepage" : "/admindashboard";
     } else {
