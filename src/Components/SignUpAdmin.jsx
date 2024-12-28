@@ -9,6 +9,7 @@ export default function SignUpAdmin() {
       <center>
         <div className={style.wrapper}>
           <h1>Sign Up Admin</h1>
+          <input type="text" placeholder="Username" name="Username" />
           <input type="email" placeholder="Email" name="Email" />
           <input type="password" placeholder="Password" name="Password" />
           <button type="submit">
@@ -24,7 +25,7 @@ export default function SignUpAdmin() {
           </button>
           <div>
             Not a member?
-            <Link to= "/signinadminanduser">Log Now</Link>
+            <Link to="/signinadminanduser">Log Now</Link>
           </div>
         </div>
       </center>

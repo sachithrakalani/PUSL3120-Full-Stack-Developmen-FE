@@ -16,6 +16,7 @@ import AdminPage from "./Components/AdminPage";
 import AddMoviesPage from "./Components/AddMoviesPage";
 import UserProfile from "./Components/UserProfile";
 import SingleMoviePage from "./Components/SingleMoviePage";
+import SeatBooking from "./Components/SeatBooking";
 
 const carouselData = [
   { src: image1, alt: "1st image" },
@@ -41,6 +42,7 @@ function App() {
           <Route path= "addmovies" element= {<AddMoviesPage />} />
           <Route path= "/userprofile" element= {<UserProfile />} />
           <Route path= "/singlemoviepage/:id" element= {<SingleMoviePage />} /> 
+          <Route path= "/seatbooking" element= {<SeatBooking />} />
         </Routes>
       </div>
     </Router>
