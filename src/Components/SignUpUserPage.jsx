@@ -15,7 +15,7 @@ export default function SignUpUser() {
     });
 
     const data = await response.json();
-    // alert(data.message);
+    alert(data.message);
   };
 
   return (
