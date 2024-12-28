@@ -9,14 +9,8 @@ export default function SignInUserPage() {
       <center>
         <div className={style.wrapper}>
           <h1>Sign In User</h1>
-          <input type="username" placeholder="Username" name="username" />
           <input type="email" placeholder="Email" name="Email" />
           <input type="password" placeholder="Password" name="Password" />
-          <input
-            type="TelephoneNo"
-            placeholder="Telephone No"
-            name="Telephone No"
-          />
           <button type="submit">
             <Link
               to="/homepage"

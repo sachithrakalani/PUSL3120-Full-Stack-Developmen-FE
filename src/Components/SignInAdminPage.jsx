@@ -9,7 +9,6 @@ export default function SignInAdminPage() {
       <center>
         <div className={style.wrapper}>
           <h1>Sign In Admin</h1>
-          <input type="username" placeholder="Username" name="username" />
           <input type="email" placeholder="Email" name="Email" />
           <input type="password" placeholder="Password" name="Password" />
           <button type="submit">
@@ -24,8 +23,7 @@ export default function SignInAdminPage() {
             </Link>
           </button>
           <div>
-            Not a member?
-            <Link to= "/signupadminanduser">Register Now</Link>
+            Not a member?<Link to="/signupadminanduser">Register Now</Link>
           </div>
         </div>
       </center>

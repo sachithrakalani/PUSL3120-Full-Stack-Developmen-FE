@@ -14,7 +14,7 @@ export default function SignUpUser() {
           <input type="password" placeholder="Password" name="Password" />
           <button type="submit">
             <Link
-              to= "/homepage"
+              to="/homepage"
               style={{
                 textDecoration: "none",
                 color: "white",

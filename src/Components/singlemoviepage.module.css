@@ -1,3 +1,8 @@
+.innerContainer {
+  height: 86.5vh;
+  background-color: #2d1b5f;
+}
+
 .imageContainer {
   display: flex;
   justify-content: center;
@@ -7,9 +12,14 @@
 
 .img {
   width: 1000px;
-  height: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  height: 400px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  margin-right: 100px;
+}
+
+.details {
+  color: white;
 }
 
 .calendarContainer {
