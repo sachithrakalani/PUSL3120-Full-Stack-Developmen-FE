@@ -1,21 +1,36 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import HomePageHeader from "./HomePageHeader";
 import style from "./signinpage.module.css";
 
 export default function SignUpUser() {
+  const navigate = useNavigate();
   const handleSignUp = async () => {
-    const username = document.querySelector("[name='Username']").value;
-    const email = document.querySelector("[name='Email']").value;
-    const password = document.querySelector("[name='Password']").value;
+    const username = document.querySelector("[name='Username']").value.trim();
+    const email = document.querySelector("[name='Email']").value.trim();
+    const password = document.querySelector("[name='Password']").value.trim();
 
-    const response = await fetch("http://localhost:3000/user/signup", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ username, email, password }),
-    });
+    if (!username || !email || !password) {
+      alert("All fields are required.");
+      return;
+    }
+    try {
+      const response = await fetch("http://localhost:3000/user/signup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ username, email, password }),
+      });
 
-    const data = await response.json();
-    alert(data.message);
+      const data = await response.json();
+      if (response.ok) {
+        alert(data.message);
+        navigate("/");
+      } else {
+        alert(data.message || "Sign-up failed. Please try again.");
+      }
+    } catch (error) {
+      alert("An error occurred while signing up. Please try again.");
+      console.error(error);
+    }
   };
 
   return (
@@ -28,17 +43,9 @@ export default function SignUpUser() {
           <input type="email" placeholder="Email" name="Email" />
           <input type="password" placeholder="Password" name="Password" />
           <button type="submit">
-            <Link
-              to="/homepage"
-              style={{
-                textDecoration: "none",
-                color: "white",
-              }}
-            >
-              <button type="button" onClick={() => handleSignUp()}>
-                Sign Up
-              </button>
-            </Link>
+            <button type="button" onClick={() => handleSignUp()}>
+              Sign Up
+            </button>
           </button>
           <div>
             Not a member? <Link to="/signinadminanduser">Log Now</Link>
