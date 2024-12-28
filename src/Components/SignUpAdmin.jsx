@@ -3,6 +3,21 @@ import HomePageHeader from "./HomePageHeader";
 import style from "./signinpage.module.css";
 
 export default function SignUpAdmin() {
+  const handleSignUp = async () => {
+    const username = document.querySelector("[name='Username']").value;
+    const email = document.querySelector("[name='Email']").value;
+    const password = document.querySelector("[name='Password']").value;
+
+    const response = await fetch("http://localhost:3000/admin/signup", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ username, email, password }),
+    });
+
+    const data = await response.json();
+    alert(data.message);
+  };
+
   return (
     <div className={style.signcontainer}>
       <HomePageHeader />
@@ -20,7 +35,9 @@ export default function SignUpAdmin() {
                 color: "white",
               }}
             >
-              Sign Up
+              <button type="button" onClick={() => handleSignUp()}>
+                Sign Up
+              </button>
             </Link>
           </button>
           <div>
