@@ -1,16 +1,12 @@
 import userprofile from "./../../public/assets/images/userprofile.jpg";
 import HomePageHeader from "./HomePageHeader";
 
-
-export default function UserProfile(){
+export default function UserProfile() {
   return (
     <div>
-        <HomePageHeader />
+      <HomePageHeader />
       <div>
-        <img
-          src={userprofile}
-          alt="User Avatar"
-        />
+        <img src={userprofile} alt="User Avatar" />
       </div>
       <div>
         <h2>John Doe</h2>
@@ -19,5 +15,4 @@ export default function UserProfile(){
       </div>
     </div>
   );
-};
-
+}

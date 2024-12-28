@@ -22,7 +22,10 @@ export default function HomePageHeader() {
           </Link>
         </button>
         <div className={styles.links}>
-        <Link to="/userprofile" style={{ textDecoration: "none", color: "white" }}>
+          <Link
+            to="/userprofile"
+            style={{ textDecoration: "none", color: "white" }}
+          >
             <span>User Profile</span>
           </Link>
           <span>|</span>
